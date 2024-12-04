@@ -13,22 +13,22 @@ def pagina_frete(request):
         localidade = request.POST.get('localidade')
         valor_pedido = float(request.POST.get('valor_pedido'))
 
-        valor_por_km = 0.5
+        valor_por_km = 0.2
         valor_frete = (peso / 1000) * distancia * valor_por_km
 
         if tipo_entrega == "expressa":
-            valor_frete = valor_frete * +20
+            valor_frete = valor_frete * +0.2
         elif tipo_entrega == "economica":
-            valor_frete = valor_frete * -20
+            valor_frete = valor_frete * -0.2
 
         if volume > 0.1:
-            valor_frete += volume * 10
+            valor_frete = volume * 7
 
         if localidade == "rural":
-            valor_frete = valor_frete + 5
+            valor_frete = valor_frete + 10
 
         if valor_frete < 10:
-            valor_frete = 100
+            valor_frete = 10
 
         contexto = {
             'peso': peso,

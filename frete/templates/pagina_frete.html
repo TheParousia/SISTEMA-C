@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cáculo da Velocidade Média</title>
+    <title>Frete</title>
 </head>
 
 <body>
-    <h1>Cáculo da Velocidade Média</h1>
+    <h1>Sistema que calcula Frete</h1>
 
     <div class="resultado">
         <h2>Resultado:</h2>
-        <p><strong>Valor do Pedido:</strong> JP¥ {{ valor_pedido }}</p>
-        <p><strong>Valor do Frete:</strong> JP¥ {{ valor_frete }}</p>
+        <p><strong>Valor do Pedido:</strong>  {{ valor_pedido }}</p>
+        <p><strong>Valor do Frete:</strong>  {{ valor_frete }}</p>
     </div>
 
     <form action="" method="post">
@@ -26,8 +26,8 @@
 
         <label for="tipo_entrega">Tipo de Entrega:</label>
         <select name="tipo_entrega" id="tipo_entrega" required>
-            <option value="expressa">Economica</option>
-            <option value="economica">Expressa</option>
+            <option value="expressa">Expressa</option>
+            <option value="economica">Economica</option>
         </select>
 
         <label for="volume">Volume (m3):</label>
@@ -39,7 +39,7 @@
             <option value="cidade">Urbana</option>
         </select>
 
-        <label for="valor_pedido">Valor do Pedido ($, em dolar):</label>
+        <label for="valor_pedido">Valor do Pedido (R$, em real):</label>
         <input type="number" name="valor_pedido" id="valor_pedido" step="0.01" required>
 
         <input type="submit" value="Calcular Frete">
