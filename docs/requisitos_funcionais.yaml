@@ -1,0 +1,21 @@
+Requisitos Funcionais
+
+Cálculo do Frete:
+
+    Calcular o valor base do frete: O sistema deve calcular o valor base do frete multiplicando o peso (em toneladas) pela distância, o valor por quilômetro e pelo fator de ajuste de acordo com o tipo de entrega.
+    Aplicar acréscimo por volume: Caso o volume da encomenda seja superior a 0,1 m³, o sistema deve adicionar calcular R$ 7,00 para cada 1m³ de volume.
+    Aplicar acréscimo por localidade: Caso a entrega seja para uma área rural, o sistema deve adicionar R$10,00 ao valor do frete.
+    Definir valor mínimo de frete: O sistema deve garantir que o valor final do frete não seja inferior a R$10,00.
+
+Tipos de Entrega:
+
+    Entrega expresso: O sistema deve oferecer a opção de entrega do tipo expresso, com um acréscimo percentual de 20% no valor do frete se baseando no valor do frente base.
+    Entrega econômica: O sistema deve oferecer a opção de entrega econômica, com um desconto de 20% no valor do frete se baseando no valor do frente base.
+
+Considerações Adicionais:
+
+    Unidades de medida: O sistema deve considerar as unidades de medida corretas para peso (toneladas), distância (quilômetros) e volume (metros cúbicos).
+    Valores fixos: O sistema deve utilizar valores fixos para o valor do freter por quilômetro, ele deverá ser R$2,00.
+        Para cada 1m³ de volume do frete deverá ser acrescido R$7,00. 
+        Caso a entrega seja no interior, deverá ser acrescido R$10,00.
+    Moeda: O sistema deve indicar a moeda utilizada nos cálculos (neste caso, real).
