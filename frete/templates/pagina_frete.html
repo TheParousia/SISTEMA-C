@@ -12,8 +12,8 @@
 
     <div class="resultado">
         <h2>Resultado:</h2>
-        <p><strong>Valor do Pedido:</strong>  {{ valor_pedido }}</p>
-        <p><strong>Valor do Frete:</strong>  {{ valor_frete }}</p>
+        <p><strong>Valor do Pedido:</strong>R$  {{ valor_pedido }}</p>
+        <p><strong>Valor do Frete:</strong> R$ {{ valor_frete }}</p>
     </div>
 
     <form action="" method="post">
@@ -39,7 +39,7 @@
             <option value="cidade">Urbana</option>
         </select>
 
-        <label for="valor_pedido">Valor do Pedido (R$, em real):</label>
+        <label for="valor_pedido">Valor do Pedido (R$, em reais):</label>
         <input type="number" name="valor_pedido" id="valor_pedido" step="0.01" required>
 
         <input type="submit" value="Calcular Frete">
